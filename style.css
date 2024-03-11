@@ -273,14 +273,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endCo
     flex-direction: row;
 }
 
+.card-responsive {
+    min-width: 540px;
+}
+
+
 @media only screen and (max-width: 767px) {
     #hero {
         height: 100vh;
         padding-top: 196px !important;
         background: rgb(23,23,23);
-        background: -moz-linear-gradient(180deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
-        background: -webkit-linear-gradient(180deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
-        background: linear-gradient(180deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
+        background: -moz-linear-gradient(180deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
+        background: -webkit-linear-gradient(180deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
+        background: linear-gradient(180deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endColorstr="#171717",GradientType=1);
     }
     #hero .container .row div h1 {
@@ -289,15 +294,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endCo
     .stat h2 {
         font-size: calc(4vw + 1vh);
     }
+    .card-responsive {
+        min-width: 300px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
     #hero {
         height: 100vh;
         background: rgb(23,23,23);
-        background: -moz-linear-gradient(180deg, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.8) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
-        background: -webkit-linear-gradient(180deg, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.8) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
-        background: linear-gradient(180deg, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.8) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
+        background: -moz-linear-gradient(180deg, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.8) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
+        background: -webkit-linear-gradient(180deg, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.8) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
+        background: linear-gradient(180deg, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.8) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endColorstr="#171717",GradientType=1);
     }
     #hero .container .row div h1 {
@@ -305,6 +313,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endCo
     }
     .dynamic-service {
         font-size: 48px !important;
+    }
+    .grid-container {
+        display: grid;
+        gap: 30px;
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e f";
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto;
     }
 }
 
