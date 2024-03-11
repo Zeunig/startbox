@@ -285,6 +285,11 @@ background: linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 64%, rgb
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endColorstr="#171717",GradientType=1);
 }
 
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
 @media only screen and (max-width: 767px) {
     #hero {
         height: 100vh;

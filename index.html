@@ -295,6 +295,60 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid" id="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-6">
+                    <a target="_blank" href="https://www.google.com/maps/place/STARTBOX+Werbeagentur+Corporate-+und+Web-Design/@48.0369603,14.4079414,18z/data=!3m1!4b1!4m6!3m5!1s0x4773c3f56981067d:0xb8b3848964251935!8m2!3d48.0369585!4d14.4092289!16s%2Fg%2F1td5dyml?entry=ttu">
+                        <img src="./images/location.jpg" alt="" height="500px" width="500px" style="object-fit: cover;">
+                    </a>
+                    <div class="contacts pt-4">
+                        <div class="contact">
+                            <img src="./placeholder.webp" alt="" height="48px" width="48px">
+                            <div class="contact-information ps-3">
+                                <h4>Address</h4>
+                                <p>Grillparzerstraße 3, 4400 Steyr</p>
+                            </div>
+                        </div>
+                        <div class="contact pt-3">
+                            <img src="./placeholder.webp" alt="" height="48px" width="48px">
+                            <div class="contact-information ps-3">
+                                <h4>Facebook</h4>
+                                <p>facebook.com/startbox</p>
+                            </div>
+                        </div>
+                        <div class="contact pt-3">
+                            <img src="./placeholder.webp" alt="" height="48px" width="48px">
+                            <div class="contact-information ps-3">
+                                <h4>E-Mail</h4>
+                                <p>office@startbox.at</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p>
+Office hours :<br>
+    - Monday - Thursday : 8:00 - 14:00<br>
+    - Friday : 9:00 - 12:00<br>
+    - Saturday, Sunday : Closed
+                    </p>
+                    <form action="/content/de/kontakt_anfahrt/sendmail.html" method="post" id="contactform">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name"><br>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" name="email" id="email"><br>
+                        <label for="message">Message</label><br>
+                        <textarea name="message" id="message" cols="60" rows="10" form="contactform"></textarea>
+                        <div class="h-captcha" data-sitekey="9a095cf1-a6cb-4661-932b-2a34e17b1098"></div><br>
+                        <input type="button" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <script>
         var texts = ["logos","corporate design", "webdesign","book covers"];
         var images = ["./images/image-031.png","./images/image-019.png","./images/image-002.png","./images/magazine.webp"];
