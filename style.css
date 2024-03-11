@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-main: #797D64; /*#21B5D6*/
+}
+
+html, body {
+    background-color: #ECECEC !important;
+    color: #171717 !important;
+    font-family: 'Inter';
+}
+h1,h2,h3,h4,h5,h6,p,a  {
+    color: #171717 !important;
+    margin: 0;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+}
+h2 {
+    font-size: 40px;
+    font-weight:bold;
+}
+h3 {
+    font-size: 32px;
+}
+h4 {
+    font-size: 24px;
+}
+h5 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 16px;
+}
+.highlight {
+    color: var(--color-main) !important;
+}
+button.highlight {
+    background-color: var(--color-main) !important;
+    border: 0;
+}
+
+.h-inherit {
+    height: inherit;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav li a h6 {
+    font-weight: 600;
+}
+.nav button h5 {
+    font-weight: bold;
+}
+
+#navbar {
+    background-color: #ECECEC;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+#hero {
+    height: 100vh;
+    padding-top: 128px !important;
+    background: rgb(23,23,23);
+background: -moz-linear-gradient(90deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
+background: -webkit-linear-gradient(90deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
+background: linear-gradient(90deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endColorstr="#171717",GradientType=1);
+z-index: 1;
+position: relative;
+}
+
+#dynamic-service-background-1 {
+    position: absolute; 
+    height: 100vh; 
+    background: url('magazine.webp') center/cover no-repeat; 
+    z-index: 0; 
+    width: 100%;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+#dynamic-service-background-2 {
+    position: absolute; 
+    height: 100vh; 
+    background: url('./images/image-019.png') center/cover no-repeat; 
+    z-index: 0; 
+    width: 100%;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+
+#hero-inside {
+    height: calc(100vh - 128px) !important; overflow: hidden; display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+#navbar-logo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.hero-text {
+    color: #ECECEC !important;
+}
+#stats {
+    height: 128px;
+    background-color: #EFEFEF;
+}
+
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #171717 !important;
+        color: #ECECEC !important;
+    }
+    h1,h2,h3,h4,h5,h6,p,a  {
+        color: #ECECEC !important;
+        text-decoration: none;
+        margin: 0;
+    }
+    #navbar {
+        background-color: #1F1F1F;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+    .hero-text {
+        color: #ECECEC !important;
+    }
+    #stats {
+        background-color: #1D1D1D;
+    }
+}
+
+.stat h3 {
+    font-size: calc(1.5vw + 1vh);
+
+}
+
+@media only screen and (max-width: 767px) {
+    #hero {
+        height: 100vh;
+        padding-top: 196px !important;
+        background: rgb(23,23,23);
+        background: -moz-linear-gradient(180deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
+        background: -webkit-linear-gradient(180deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
+        background: linear-gradient(180deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0.85) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endColorstr="#171717",GradientType=1);
+    }
+    #hero .container .row div h1 {
+        font-size: 80px;
+    }
+    .stat h2 {
+        font-size: calc(4vw + 1vh);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #hero {
+        height: 100vh;
+        background: rgb(23,23,23);
+        background: -moz-linear-gradient(180deg, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.8) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
+        background: -webkit-linear-gradient(180deg, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.8) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
+        background: linear-gradient(180deg, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.8) 35%, rgba(23,23,23,0.85) 44%, rgba(23,23,23,0.03) 89%, rgba(23,23,23,0.2) 100%),url('magazine.jpg') center center no-repeat;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endColorstr="#171717",GradientType=1);
+    }
+    #hero .container .row div h1 {
+        font-size: 56px;
+    }
+    .dynamic-service {
+        font-size: 48px !important;
+    }
+}
+
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    out {
+        opacity: 1;
+    }
+}
+.fade-out {
+    /*animation-duration: 1s;
+    animation-name: fade-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;*/
+    opacity: 0;
+}
+.fade-in {
+    /*animation-duration: 1s;
+    animation-name: fade-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;*/
+    opacity: 1;
+}
+
+.cursor {
+    animation: cursor-blink 1.5s steps(2) infinite;
+
+}
+  
+.company_trust {
+    filter:saturate(0.0) brightness(0.6);
+    transition: 0.2s;
+}
+.company_trust:hover {
+    filter:saturate(1.0) brightness(1);
+}
+
+
+.reviews {
+    overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.stars {
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+}
+.fading-overlay {
+    background: rgb(23,23,23);
+background: -moz-linear-gradient(90deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0) 15%, rgba(23,23,23,0) 85%, rgba(23,23,23,0.85) 100%);
+background: -webkit-linear-gradient(90deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0) 15%, rgba(23,23,23,0) 85%, rgba(23,23,23,0.85) 100%);
+background: linear-gradient(90deg, rgba(23,23,23,0.85) 0%, rgba(23,23,23,0) 15%, rgba(23,23,23,0) 85%, rgba(23,23,23,0.85) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endColorstr="#171717",GradientType=1);
+}
