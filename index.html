@@ -165,7 +165,7 @@
         <div class="container-fluid mt-5">
             <div class="fading-overlay"></div>
             <div class="reviews">
-                <div class="card text-bg-dark mb-3 ms-5" style="min-width: 540px;">
+                <div class="card mb-3 ms-5 card-colors" style="min-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
                         <img src="./placeholder.webp" class="img-fluid rounded-start" alt="...">
@@ -186,7 +186,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="card text-bg-dark mb-3 ms-5" style="min-width: 540px;">
+                <div class="card mb-3 ms-5 card-colors" style="min-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
                         <img src="./placeholder.webp" class="img-fluid rounded-start" alt="...">
@@ -207,7 +207,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="card text-bg-dark mb-3 ms-5" style="min-width: 540px;">
+                <div class="card mb-3 ms-5 card-colors" style="min-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
                         <img src="./placeholder.webp" class="img-fluid rounded-start" alt="...">
@@ -228,7 +228,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="card text-bg-dark mb-3 ms-5" style="min-width: 540px;">
+                <div class="card mb-3 ms-5 card-colors" style="min-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
                         <img src="./placeholder.webp" class="img-fluid rounded-start" alt="...">
@@ -299,9 +299,9 @@
         <h2 class="text-center">Contact Us</h2>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <a target="_blank" href="https://www.google.com/maps/place/STARTBOX+Werbeagentur+Corporate-+und+Web-Design/@48.0369603,14.4079414,18z/data=!3m1!4b1!4m6!3m5!1s0x4773c3f56981067d:0xb8b3848964251935!8m2!3d48.0369585!4d14.4092289!16s%2Fg%2F1td5dyml?entry=ttu">
-                        <img src="./images/location.jpg" alt="" height="500px" width="500px" style="object-fit: cover;">
+                        <img src="./images/location.jpg" alt="" width="100%" style="object-fit: cover;">
                     </a>
                     <div class="contacts pt-4">
                         <div class="contact">
@@ -327,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6 mt-5 mt-md-0">
                     <p>
 Office hours :<br>
     - Monday - Thursday : 8:00 - 14:00<br>
@@ -335,13 +335,13 @@ Office hours :<br>
     - Saturday, Sunday : Closed
                     </p>
                     <form action="/content/de/kontakt_anfahrt/sendmail.html" method="post" id="contactform">
-                        <label for="name">Name</label><br>
-                        <input type="text" name="name" id="name"><br>
-                        <label for="email">E-mail</label><br>
-                        <input type="email" name="email" id="email"><br>
-                        <label for="message">Message</label><br>
-                        <textarea name="message" id="message" cols="60" rows="10" form="contactform"></textarea>
-                        <div class="h-captcha" data-sitekey="9a095cf1-a6cb-4661-932b-2a34e17b1098"></div><br>
+                        <label for="name" class="pt-3">Name</label><br>
+                        <input type="text" name="name" id="name" style="width: 100%;"><br>
+                        <label for="email" class="pt-3">E-mail</label><br>
+                        <input type="email" name="email" id="email"style="width: 100%;"><br>
+                        <label for="message" class="pt-3">Message</label><br>
+                        <textarea name="message" id="message" cols="60" style="width: 100%;" rows="10" form="contactform"></textarea>
+                        <div class="h-captcha pt-3" data-sitekey="9a095cf1-a6cb-4661-932b-2a34e17b1098"></div><br>
                         <input type="button" value="Submit">
                     </form>
                 </div>
