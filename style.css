@@ -326,6 +326,29 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endCo
     }
 }
 
+@media screen and (max-width: 576px) and (prefers-color-scheme: light) {
+    #hero {
+        height: 100vh;
+        background: rgb(239,239,239);
+        background: -moz-linear-gradient(180deg, rgba(239,239,239,0.8) 0%, rgba(239,239,239,0.8) 35%, rgba(239,239,239,0.85) 44%, rgba(239,239,239,0.03) 89%, rgba(239,239,239,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
+        background: -webkit-linear-gradient(180deg, rgba(239,239,239,0.8) 0%, rgba(239,239,239,0.8) 35%, rgba(239,239,239,0.85) 44%, rgba(239,239,239,0.03) 89%, rgba(239,239,239,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
+        background: linear-gradient(180deg, rgba(239,239,239,0.8) 0%, rgba(239,239,239,0.8) 35%, rgba(239,239,239,0.85) 44%, rgba(239,239,239,0.03) 89%, rgba(239,239,239,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endColorstr="#171717",GradientType=1);
+    }
+}
+
+@media screen and (max-width: 767px) and (prefers-color-scheme: light) {
+    #hero {
+        height: 100vh;
+        padding-top: 196px !important;
+        background: rgb(239,239,239);
+        background: -moz-linear-gradient(180deg, rgba(239,239,239,0.8) 0%, rgba(239,239,239,0.8) 35%, rgba(239,239,239,0.85) 44%, rgba(239,239,239,0.03) 89%, rgba(239,239,239,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
+        background: -webkit-linear-gradient(180deg, rgba(239,239,239,0.8) 0%, rgba(239,239,239,0.8) 35%, rgba(239,239,239,0.85) 44%, rgba(239,239,239,0.03) 89%, rgba(239,239,239,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
+        background: linear-gradient(180deg, rgba(239,239,239,0.8) 0%, rgba(239,239,239,0.8) 35%, rgba(239,239,239,0.85) 44%, rgba(239,239,239,0.03) 89%, rgba(239,239,239,0.2) 100%),url('magazine.jpg') center center no-repeat !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endColorstr="#171717",GradientType=1);
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     html, body {
         background-color: #171717 !important;
