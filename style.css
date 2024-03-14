@@ -79,7 +79,7 @@ position: relative;
 #dynamic-service-background-1 {
     position: absolute; 
     height: 100vh; 
-    background: url('magazine.webp') center/cover no-repeat !important; 
+    background: url('./images/magazine.webp') center/cover no-repeat; 
     z-index: 0; 
     width: 100%;
     transition-property: opacity;
@@ -89,7 +89,7 @@ position: relative;
 #dynamic-service-background-2 {
     position: absolute; 
     height: 100vh; 
-    background: url('./images/image-019.png') center/cover no-repeat !important; 
+    background: url('./images/packaging.webp') center/cover no-repeat; 
     z-index: 0; 
     width: 100%;
     transition-property: opacity;
