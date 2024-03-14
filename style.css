@@ -173,11 +173,13 @@ position: relative;
 
 
 .reviews {
-    overflow: auto;
+    overflow: scroll;
   white-space: nowrap;
   display: flex;
   flex-direction: row;
   position: relative;
+  scrollbar-width: thin;
+  scrollbar-color:var(--color-main);
 }
 
 .stars {
@@ -251,7 +253,6 @@ img.blog-image {
     width: 100%;
     height: 35%;
     right: 0;
-    pointer-events: none;
     background: rgb(239,239,239);
 background: -moz-linear-gradient(0deg, rgba(239,239,239,1) 0%, rgba(239,239,239,1) 64%, rgba(239,239,239,0.53) 92%, rgba(239,239,239,0) 100%);
 background: -webkit-linear-gradient(0deg, rgba(239,239,239,1) 0%, rgba(239,239,239,1) 64%, rgba(239,239,239,0.53) 92%, rgba(239,239,239,0) 100%);
@@ -384,7 +385,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endCo
         width: 100%;
         height: 35%;
         right: 0;
-        pointer-events: none;
         background: rgb(23,23,23);
     background: -moz-linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 64%, rgba(23,23,23,0.53) 92%, rgba(23,23,23,0) 100%);
     background: -webkit-linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 64%, rgba(23,23,23,0.53) 92%, rgba(23,23,23,0) 100%);
@@ -464,4 +464,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171717",endCo
     https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap#browser_compatibility
     TODO : Later on remove this when this feature will be available for Firefox's stable builds too
     */
+}
+
+.blog-overlay center a {
+    background-color: var(--color-main);
+    border: none;
+}
+.blog-overlay center a:hover {
+    background-color: var(--color-main);
+    border: none;
 }
